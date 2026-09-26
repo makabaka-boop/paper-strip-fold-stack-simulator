@@ -1,0 +1,10 @@
+services:
+  fold-workbench:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: paper-strip-folding-workbench:latest
+    container_name: fold-workbench
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
